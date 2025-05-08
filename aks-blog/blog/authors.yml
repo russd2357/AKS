@@ -1,0 +1,155 @@
+brian-redmond:
+  name: Brian Redmond
+  title: Brian works on AKS and Azure Cloud Native Platforms and is responsible for
+    customer and community efforts globally.
+  image_url: https://pbs.twimg.com/profile_images/1061507580202078213/KnOEjBzC_400x400.jpg
+  url: https://www.linkedin.com/in/redmondbrian
+  socials:
+    email: brian.redmond@microsoft.com
+    x: chzbrgr71
+    linkedin: redmondbrian
+jorge-palma:
+  name: Jorge Palma
+  title: Jorge is the Principal PM Lead for the Azure Kubernetes Service.
+  image_url: https://pbs.twimg.com/profile_images/1793008492804227072/rAuLXlqY_400x400.jpg
+  url: https://github.com/palma21
+  socials:
+    x: jorgefpalma
+    linkedin: jpalma21
+    github: palma21
+kaarthikeyan-subramanian:
+  name: Kaarthikeyan Subramanian
+  title: Product Manager
+paul-yu:
+  name: Paul Yu
+  title: Cloud Native Developer Advocate. Loves pineapple on pizza, dogs, and writing
+    code.
+  image_url: https://pbs.twimg.com/profile_images/1646930025248346114/-4anTs8L_400x400.jpg
+  url: https://github.com/pauldotyu
+  socials:  
+    github: pauldotyu
+    website: https://paulyu.dev
+coco-wang:
+  name: Coco Wang
+  title: Coco is an AKS Product Manager and mainly works on AKS security capability,
+    AI-based security remediation plan.
+  image_url: https://pbs.twimg.com/profile_images/1791779839114092544/Lj9jvCTG_400x400.jpg
+  url: https://www.linkedin.com/in/coco-wang-2399041b6/
+  socials:
+    email: coco.wang@microsoft.com
+    
+saurabh-sharma:
+  name: Saurabh Sharma
+  title: Product Manager for Cloud Native Storage initiatives
+  image_url: https://pbs.twimg.com/profile_images/1818009678342930433/8aOYeSB6_400x400.jpg
+  url: https://github.com/saurabh0501
+  socials:
+    github: saurabh0501
+kenneth-kilty:
+  name: Kenneth Kilty
+  title: Technical Program Manager for Cloud Native Platforms
+  image_url: https://www.kenkilty.com/profilepic.jpg
+  url: https://github.com/KenKilty
+  socials:
+    github: KenKilty
+sachi-desai:
+  name: Sachi Desai
+  title: Sachi is a Product Manager and focuses on optimizing AI/ML, GPU workloads,
+    and scheduler on Azure Kubernetes Service.
+  image_url: https://pbs.twimg.com/profile_images/1823766164818026498/mglVVQnn_400x400.jpg
+  url: https://linkedin.com/in/sachi-desai
+  socials:
+    linkedin: sachi-desai
+    email: sachidesai@microsoft.com
+quentin-petraroia:
+  name: Quentin Petraroia
+  title: Product Manager for Azure Kubernetes Service.
+  image_url: https://avatars.githubusercontent.com/u/11465526?s=400&u=48bac61e9a155beb58db79ef06f4db715b5f1b4d&v=4
+  url: https://www.linkedin.com/in/quentin-petraroia-896971a8/
+  socials:
+    email: qpetraroia@microsoft.com
+gemma-tipper:
+  name: Gemma Tipper
+  title: Gemma is a Software Engineer working at MetalBear, writing open source Rust
+    for mirrord.
+  image_url: https://avatars.githubusercontent.com/u/58080601?v=4
+  url: https://github.com/gememma
+  socials:
+    linkedin: gememma
+    github: gememma
+sanket-bakshi:
+  name: Sanket Bakshi
+  title: Technical Program Manager for Cloud Native Platforms
+  image_url: https://media.licdn.com/dms/image/v2/C4E03AQH38txvkPGIPQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1518066327713?e=1742428800&v=beta&t=T2Cj1iDs-oYCaA1ISi_gQCPHeTzt87N8cZ8yCjSGeEk
+  url: https://www.linkedin.com/in/sanket-bakshi-69a55aa/
+ryan-zhang:
+  name: Ryan Zhang
+  title: Principal Software Engineer for Azure Kubernetes Service
+  image_url: https://media.licdn.com/dms/image/v2/C5603AQHa1FJBfzIVaQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1533281697412?e=1743033600&v=beta&t=oFIvr0vwDLPj6cbRF8Vn6NrUh89H2Da7RI999kemW28
+  url: https://www.linkedin.com/in/ryanzhang-oss/
+bridget-kromhout:
+  name: Bridget Kromhout
+  title: Bridget Kromhout is a Principal Product Manager at Microsoft Azure, focusing
+    on the open source cloud native ecosystem.
+  image_url: https://avatars.githubusercontent.com/u/2104453?v=4
+  url: https://github.com/bridgetkromhout
+  socials:
+    github: bridgetkromhout
+steve-griffith:
+  name: Steve Griffith
+  title: Steve is a part of the Microsoft App Innovation Global Blackbelt team where
+    helps customers build amazing solutions on Azure's container hosting platforms.
+  image_url: https://media.licdn.com/dms/image/v2/D4E03AQFSs7_UG9tu4Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1712869781158?e=1744243200&v=beta&t=DeHBP9Q1D5S4fWVejdVnWJt_7Fl4LujuWX1o2uhkhlA
+  url: https://github.com/swgriffith
+  socials:
+    x: SteveGriffith
+    github: swgriffith
+pavneet-ahluwalia:
+  name: Pavneet Ahluwalia
+  title: Pavneet is the Principal PM Lead for the Azure Kubernetes Service.
+  image_url: https://raw.githubusercontent.com/Azure/AKS/23e6b34acb76d5f6055ea08586bd61a8e62085b3/blog/assets/images/Pavneet_Speaker.jpg
+  url: https://github.com/pavneeta
+  socials:
+    github: pavneeta
+bob-mital:
+  name: Bob Mital
+  title: Bob Mital is a Principal Product Manager at Microsoft Azure, focusing on
+    partners and the Cloud Native ecosystem.
+  image_url: https://media.licdn.com/dms/image/v2/C5603AQH5qo4p4eH27w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1588364514178?e=1748476800&v=beta&t=muBYjAOzfRl-CletzMYfoh2njPn9O_T4Ku9fDywsI0Y
+  url: https://github.com/bobmital
+  socials:
+    github: bobmital
+    linkedin: bobmital
+suraj-deshmukh:
+  name: Suraj Deshmukh
+  title: Software Engineer at Microsoft, involved in Kubernetes and Open Source.
+  image_url: https://github.com/surajssd.png
+  url: https://github.com/surajssd
+  socials:
+    github: surajssd
+    website: https://suraj.io/
+ernest-wong:
+  name: Ernest Wong
+  title: Software Engineer at Microsoft
+  image_url: https://github.com/chewong.png
+  url: https://github.com/chewong
+  socials:
+    github: chewong
+jack-jiang:
+  name: Jack Jiang
+  title: Product Manager at Microsoft
+  image_url: https://github.com/jakjang/profilepic/blob/main/jack_headshot.jpg?raw=true
+  url: https://github.com/jakjang
+  socials:
+    github: jakjang
+ally-ford:
+  name: Ally Ford
+  title: Product Manager 2 at Microsoft
+  url: https://github.com/allyford
+  socials:
+    github: allyford
+sarah-zhou:
+  name: Sarah Zhou
+  title: Product Manager at Microsoft
+  url: https://www.linkedin.com/in/sarahjzhou/
+  
