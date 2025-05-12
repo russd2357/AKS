@@ -1,0 +1,83 @@
+/* Azure best practice: Grid layout with proper spacing */
+.blogListGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for better readability */
+    gap: 1rem; /* Reduced gap for better space utilization */
+    margin-bottom: 2rem;
+  }
+  
+  /* Enhanced responsive behavior */
+  @media (max-width: 996px) {
+    .blogListGrid {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+  }
+  
+  /* Sidebar styling with proper width and spacing */
+  .sidebarColumn {
+    padding-right: 0; /* Remove right padding that was creating extra space */
+  }
+  
+  /* Adjust the column gap in the row */
+  :global(.row) {
+    margin: 0 -0.5rem; /* Tighten the horizontal margin in the row */
+  }
+  
+  :global(.col) {
+    padding: 0 0.5rem; /* Reduce padding on columns for tighter layout */
+  }
+  
+  .sidebarColumn :global(.menu__list-item) {
+    margin: 0.5rem 0; /* Slightly reduce vertical spacing in menu */
+  }
+  
+  .sidebarColumn :global(.menu__link) {
+    font-size: 0.95rem; /* Slightly smaller font for more content */
+    padding: 0.4rem 0.6rem; /* Tighter padding */
+  }
+  
+  /* Card styling */
+  .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blogCard {
+    height: 100%;
+    margin-bottom: 0;
+  }
+  
+  .cardImage {
+    height: 180px;
+    overflow: hidden;
+    border-radius: var(--ifm-card-border-radius) var(--ifm-card-border-radius) 0 0;
+  }
+  
+  .cardImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .cardMeta {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.85rem;
+    color: var(--ifm-color-emphasis-600);
+    margin-bottom: 0.5rem;
+  }
+  
+  .cardDate {
+    font-weight: var(--ifm-font-weight-semibold);
+  }
+  
+  .cardAuthor {
+    font-style: italic;
+  }
