@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'AKS Blog',
+  title: 'AKS Engineering Blog',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/200x200.ico',
 
@@ -20,7 +20,7 @@ const config: Config = {
   organizationName: 'Azure', // Usually your GitHub org/user name.
   projectName: 'AKS', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -44,7 +44,8 @@ const config: Config = {
         // },
         blog: {
           path: './blog',
-          routeBasePath: '/', // Set this value to '/' to serve the blog at the site's root
+          routeBasePath: 'blog', // Set this value to '/' to serve the blog at the site's root
+
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
@@ -53,6 +54,18 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
+
+          // Add the archive configuration
+          archiveBasePath: 'archive',
+
+          blogSidebarCount: 'ALL', // Show all blog posts in the sidebar
+          blogSidebarTitle: 'Posts', // Change the title of the sidebar
+          sortPosts: 'descending', // Show newest posts first
+          postsPerPage: 10, // Number of posts per page (for pagination)
+
+          // Add this configuration to force the blog listing at /blog path
+          blogListComponent: require.resolve('./src/components/BlogListPage/index.tsx'),
+
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
@@ -60,7 +73,7 @@ const config: Config = {
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          onUntruncatedBlogPosts: 'warn'
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -73,7 +86,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/aks-blog-social-card.jpg',
     navbar: {
-      title: 'AKS Blog',
+      title: 'AKS Engineering Blog',
       logo: {
         alt: 'My Site Logo',
         src: 'img/200x200.svg',
