@@ -139,7 +139,7 @@ nvidia-dra-driver-k8s-dra-driver-controller-7d47546f78-wrtvc    1/1        Runni
 nvidia-dra-driver-k8s-dra-driver-kubelet-plugin-g42c9           1/1        Running     0           7s
 ```
 
-We'll apply the [sample `gpu-test1` demo script](https://github.com/NVIDIA/k8s-dra-driver/tree/main) written by [Kevin Klues](klueska@nvidia.com) from NVIDIA:
+We'll apply the [sample `gpu-test1` demo script](https://github.com/NVIDIA/k8s-dra-driver/tree/main) written by [Kevin Klues](k[lueska@nvidia.co](mailto:lueska@nvidia.co)m) from NVIDIA:
 
 ```bash
 kubectl apply --filename=demo/specs/quickstart/gpu-test1.yaml
