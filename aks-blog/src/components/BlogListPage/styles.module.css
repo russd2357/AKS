@@ -81,3 +81,44 @@
   .cardAuthor {
     font-style: italic;
   }
+  
+  /* Azure best practice: Year-based grouping styles for sidebar */
+.yearGroup {
+    margin-bottom: 1.5rem;
+  }
+  
+  .yearHeading {
+    font-size: 1.1rem;
+    font-weight: var(--ifm-font-weight-bold);
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid var(--ifm-color-emphasis-200);
+    color: var(--ifm-color-primary);
+  }
+  
+  .postList {
+    list-style: none;
+    padding-left: 0.5rem;
+    margin-bottom: 0;
+  }
+  
+  .postItem {
+    margin: 0.4rem 0;
+  }
+  
+  .postLink {
+    display: block;
+    padding: 0.25rem 0;
+    color: var(--ifm-color-emphasis-800);
+    text-decoration: none;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    transition: color 0.2s ease;
+  }
+  
+  .postLink:hover {
+    color: var(--ifm-color-primary);
+    text-decoration: none;
+  }
+  
+  /* Existing styles remain unchanged */

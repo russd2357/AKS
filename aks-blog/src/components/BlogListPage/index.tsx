@@ -2,7 +2,6 @@ import React from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import BlogListPaginator from '@theme/BlogListPaginator';
-import BlogSidebar from '@theme/BlogSidebar';
 import { ThemeClassNames } from '@docusaurus/theme-common';
 import clsx from 'clsx';
 import styles from './styles.module.css';
@@ -11,6 +10,75 @@ import styles from './styles.module.css';
 export default function BlogListPage(props) {
   const { metadata, items, sidebar } = props;
   
+  // Function to organize posts by year
+  const renderSidebarByYear = () => {
+    // If sidebar data doesn't exist, return null
+    if (!sidebar || !sidebar.items) {
+      return null;
+    }
+    
+    // Process sidebar data to extract years and posts
+    const postsByYear = {};
+    
+    // Helper function to process items recursively and extract years
+    const processItems = (items) => {
+      if (!items || !Array.isArray(items)) {
+        return;
+      }
+      
+      items.forEach(item => {
+        // If the item has a permalink, it's a post
+        if (item.permalink) {
+          // Extract year from permalink (assumes format /blog/YYYY/MM/DD/slug or /blog/YYYY-MM-DD-slug)
+          const yearMatch = item.permalink.match(/\/blog\/(\d{4})/);
+          const year = yearMatch ? yearMatch[1] : 'Other';
+          
+          // Initialize year array if it doesn't exist
+          if (!postsByYear[year]) {
+            postsByYear[year] = [];
+          }
+          
+          // Add post to the appropriate year
+          postsByYear[year].push(item);
+        }
+        // If the item has nested items, process them recursively
+        else if (item.items && Array.isArray(item.items)) {
+          processItems(item.items);
+        }
+      });
+    };
+    
+    // Process all sidebar items
+    processItems(sidebar.items);
+    
+    // Get years and sort them in descending order (newest first)
+    const years = Object.keys(postsByYear).sort((a, b) => b.localeCompare(a));
+    
+    return (
+      <div className={styles.sidebarYears}>
+        <h3 className={styles.sidebarHeading}>{sidebar.title || 'Blog Posts'}</h3>
+        
+        {years.map(year => (
+          <div key={year} className={styles.yearGroup}>
+            <h4 className={styles.yearHeading}>{year}</h4>
+            <ul className={styles.postList}>
+              {postsByYear[year].map((post, index) => (
+                <li key={index} className={styles.postItem}>
+                  <Link 
+                    to={post.permalink}
+                    className={styles.postLink}
+                  >
+                    {post.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    );
+  };
+  
   return (
     <Layout
       title={metadata.blogTitle}
@@ -18,12 +86,12 @@ export default function BlogListPage(props) {
       wrapperClassName={ThemeClassNames.wrapper.blogPages}>
       <div className="container margin-top--lg">
         <div className="row">
-          {/* Proper sidebar width following Azure documentation standards */}
+          {/* Custom sidebar implementation with year-based grouping */}
           <div className={clsx('col col--4', styles.sidebarColumn)}>
-            <BlogSidebar sidebar={sidebar} />
+            {renderSidebarByYear()}
           </div>
           
-          {/* Main content column with blog cards - adjusted for better balance */}
+          {/* Main content column with blog cards - unchanged */}
           <div className="col col--8">
             <div className={styles.blogListGrid}>
               {items.map(({content: BlogPostContent}) => {
