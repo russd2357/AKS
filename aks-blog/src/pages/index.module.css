@@ -51,3 +51,7 @@
   font-size: 0.8rem;
   color: var(--ifm-color-emphasis-600);
 }
+
+.spacer {
+  margin-bottom: 2rem;
+}

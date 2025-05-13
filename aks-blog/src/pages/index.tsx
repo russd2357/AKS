@@ -134,7 +134,7 @@ function BlogPosts(): JSX.Element {
         id: 'test-post',
         metadata: {
           title: 'Accelerating Open-Source Innovation with AKS and Bitnami on Azure Marketplace',
-          permalink: '/blog/aks-blog/blog/2025-04-03-aks-bitnami-open-source-deployments.md',
+          permalink: '/blog/2025/04/03/aks-bitnami-open-source-deployments',
           description: 'Accelerate your Kubernetes deployments on Azure with Bitnami\u2019s\ secure, pre-configured OSS solutions.',
           date: new Date('2025-04-03').toISOString(),
           formattedDate: new Date('2025-04-03').toLocaleDateString(),
@@ -148,7 +148,7 @@ function BlogPosts(): JSX.Element {
         id: 'test-post',
         metadata: {
           title: 'Apache Airflow Guidance for AKS',
-          permalink: '/blog/aks-blog/blog/2025-01-20-annouce-airflow-howto.md',
+          permalink: '/blog/2025/01/20/annouce-airflow-howto',
           description: 'Learn how to set up an AKS cluster, deploy Airflow, and explore the Airflow',
           date: new Date('2025-01-20').toISOString(),
           formattedDate: new Date('2025-01-20').toLocaleDateString(),
@@ -162,7 +162,7 @@ function BlogPosts(): JSX.Element {
         id: 'test-post',
         metadata: {
           title: 'Ray on AKS',
-          permalink: '/blog/aks-blog/blog/2025-01-13-ray-on-aks.md',
+          permalink: '/blog/2025/01/13/ray-on-aks',
           description: 'Learn how to use the Ray open-source project on Azure Kubernetes Service (AKS).',
           date: new Date('2025-01-13').toISOString(),
           formattedDate: new Date('2025-01-13').toLocaleDateString(),
@@ -238,6 +238,7 @@ function BlogPosts(): JSX.Element {
             View All Articles
           </Link>
         </div>
+        <div className='spacer'><p></p> </div>
       </div>
     );
   } catch (error) {
